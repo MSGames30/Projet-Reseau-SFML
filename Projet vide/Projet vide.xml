@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2DD517AD-90EF-4A66-B3B5-9E2F010B89B2}</ProjectGuid>
+    <RootNamespace>ToysRun</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SFML\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SFML\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio.lib;sfml-window.lib;sfml-system.lib;sfml-graphics.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Game\Character\BalanceChar.cpp" />
+    <ClCompile Include="sources\Game\Character\Character.cpp" />
+    <ClCompile Include="sources\Game\Character\Speeder.cpp" />
+    <ClCompile Include="sources\Game\Character\Tank.cpp" />
+    <ClCompile Include="sources\Game\Collectibles\Bonus.cpp" />
+    <ClCompile Include="sources\Game\Collectibles\Collectible.cpp" />
+    <ClCompile Include="sources\Game\Collectibles\Ulti.cpp" />
+    <ClCompile Include="sources\Game\Entities\DrawableObject.cpp" />
+    <ClCompile Include="sources\Game\Hud\ButtonController.cpp" />
+    <ClCompile Include="sources\Game\Hud\ElementHUD.cpp" />
+    <ClCompile Include="sources\Game\Hud\HUD.cpp" />
+    <ClCompile Include="sources\Game\Level.cpp" />
+    <ClCompile Include="sources\Game\Platform\Platform.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT0.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT1.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT2.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT3.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT4.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT5.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT6.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT7.cpp" />
+    <ClCompile Include="sources\Game\Platform\PlatformT8.cpp" />
+    <ClCompile Include="sources\Game\spell\PingPong.cpp" />
+    <ClCompile Include="sources\Game\spell\Shield.cpp" />
+    <ClCompile Include="sources\Game\spell\Spell.cpp" />
+    <ClCompile Include="sources\Game\spell\UltimTank.cpp" />
+    <ClCompile Include="sources\main.cpp" />
+    <ClCompile Include="sources\Managers\GameManager.cpp" />
+    <ClCompile Include="sources\Managers\SoundManger.cpp" />
+    <ClCompile Include="sources\Scenes\Game.cpp" />
+    <ClCompile Include="sources\Scenes\Intro.cpp" />
+    <ClCompile Include="sources\Scenes\Menu.cpp" />
+    <ClCompile Include="sources\Scenes\Scene.cpp" />
+    <ClCompile Include="sources\Tools\UtilsCpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\Game\Character\BalanceChar.h" />
+    <ClInclude Include="sources\Game\Character\Character.h" />
+    <ClInclude Include="sources\Game\Character\Speeder.h" />
+    <ClInclude Include="sources\Game\Character\Tank.h" />
+    <ClInclude Include="sources\Game\Collectibles\Bonus.h" />
+    <ClInclude Include="sources\Game\Collectibles\Collectible.h" />
+    <ClInclude Include="sources\Game\Collectibles\Ulti.h" />
+    <ClInclude Include="sources\Game\Entities\DrawableObject.h" />
+    <ClInclude Include="sources\Game\Hud\ButtonController.h" />
+    <ClInclude Include="sources\Game\Hud\ElementHUD.h" />
+    <ClInclude Include="sources\Game\Hud\HUD.h" />
+    <ClInclude Include="sources\Game\Level.h" />
+    <ClInclude Include="sources\Game\Platform\Platform.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT0.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT1.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT2.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT3.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT4.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT5.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT6.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT7.h" />
+    <ClInclude Include="sources\Game\Platform\PlatformT8.h" />
+    <ClInclude Include="sources\Game\spell\PingPong.h" />
+    <ClInclude Include="sources\Game\spell\Shield.h" />
+    <ClInclude Include="sources\Game\spell\Spell.h" />
+    <ClInclude Include="sources\Game\spell\UltimTank.h" />
+    <ClInclude Include="sources\Managers\GameManager.h" />
+    <ClInclude Include="sources\Managers\SoundManger.h" />
+    <ClInclude Include="sources\Scenes\Game.h" />
+    <ClInclude Include="sources\Scenes\Intro.h" />
+    <ClInclude Include="sources\Scenes\Menu.h" />
+    <ClInclude Include="sources\Scenes\Scene.h" />
+    <ClInclude Include="sources\Templates\Singleton.h" />
+    <ClInclude Include="sources\Tools\Defines.h" />
+    <ClInclude Include="sources\Tools\Enums.h" />
+    <ClInclude Include="sources\Tools\UtilsCpp.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

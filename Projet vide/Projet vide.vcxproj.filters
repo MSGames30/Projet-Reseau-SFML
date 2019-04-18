@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="sources\main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Player.cpp">
+      <Filter>Fichiers sources\Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\DrawableObject.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Managers\GameManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Tools\UtilsCpp.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Game.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Intro.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Menu.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Scene.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Tank\Tank.cpp">
+      <Filter>Fichiers sources\Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Tank\Turret.cpp">
+      <Filter>Fichiers sources\Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Bullet\Bullet.cpp">
+      <Filter>Fichiers sources\Game\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Hud\HUD.cpp">
+      <Filter>Fichiers sources\Game\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Hud\elementHud.cpp">
+      <Filter>Fichiers sources\Game\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Ennemy.cpp">
+      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Kamikaz.cpp">
+      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Sniper.cpp">
+      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Soldat.cpp">
+      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\SoldatLourd.cpp">
+      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\Base.cpp">
+      <Filter>Fichiers sources\Game\Entities\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\BulletEnnemy.cpp">
+      <Filter>Fichiers sources\Game\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\Map.cpp">
+      <Filter>Fichiers sources\Game\Entities\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Collectibles\Collectibles.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\Map_Plan.cpp">
+      <Filter>Fichiers sources\Game\Entities\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Tools\ToolsSFML.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Managers\ViewManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\JoinGameForm.cpp">
+      <Filter>Fichiers sources\Game\Entities\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\HostedGame.cpp">
+      <Filter>Fichiers sources\Game\Entities\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\CreateGameForm.cpp">
+      <Filter>Fichiers sources\Game\Entities\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\Button.cpp">
+      <Filter>Fichiers sources\Game\Entities\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Managers\ConnectManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Managers\PollEventManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Lobby.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Login.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\Scenes\Intro.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Menu.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Scene.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Game.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\UtilsCpp.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\Defines.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\Enums.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Templates\Singleton.h">
+      <Filter>Fichiers d%27en-tête\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\DrawableObject.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Player.h">
+      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\GameManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Tank\Tank.h">
+      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Tank\Turret.h">
+      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Bullet\Bullet.h">
+      <Filter>Fichiers d%27en-tête\Game\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Hud\HUD.h">
+      <Filter>Fichiers d%27en-tête\Game\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Hud\elementHud.h">
+      <Filter>Fichiers d%27en-tête\Game\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Ennemy.h">
+      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Kamikaz.h">
+      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Sniper.h">
+      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Soldat.h">
+      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\SoldatLourd.h">
+      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\Base.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\BulletEnnemy.h">
+      <Filter>Fichiers d%27en-tête\Game\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\Map.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Collectibles\Collectibles.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\Map_Plan.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\ToolsSFML.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\ViewManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\Button.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\CreateGameForm.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\HostedGame.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\JoinGameForm.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\ConnectManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\PollEventManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Lobby.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Login.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{ee0c0607-f128-40fc-845a-50a8750e8fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{14a30dfb-51f4-4e3e-a900-304c79e49d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game">
+      <UniqueIdentifier>{0920417a-7f6e-4640-bb08-870df10fabc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game">
+      <UniqueIdentifier>{1d0030d7-31f4-42ba-a30a-e1bf2f3eff03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Entities">
+      <UniqueIdentifier>{f0d68c59-f2f5-4f22-81c4-50166562ef0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Character">
+      <UniqueIdentifier>{21de326f-04f6-48e6-9260-1d2814404166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Managers">
+      <UniqueIdentifier>{703f046b-4494-4cc1-9abb-3d9932b0c677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Scenes">
+      <UniqueIdentifier>{30e593de-6367-4e95-81f8-5432529ce138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Tools">
+      <UniqueIdentifier>{07a682d7-ed4f-4d87-8f6b-6db8b371bb0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Templates">
+      <UniqueIdentifier>{0cd825e2-ef83-48e1-b82a-d58d7773ba6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Entities">
+      <UniqueIdentifier>{3cce22bb-c000-4576-b660-a0fe64512390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Character">
+      <UniqueIdentifier>{51822f05-06ac-4c86-9d09-1cfdb5ae8687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Managers">
+      <UniqueIdentifier>{c380f708-860b-4031-a414-bc8a401f064b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools">
+      <UniqueIdentifier>{f977d070-0ec1-45f7-aad7-37bf8ca7894b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Scenes">
+      <UniqueIdentifier>{e108ad1d-f3f1-481e-bb23-932747ee5aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Bullet">
+      <UniqueIdentifier>{8af033bd-955e-4aa1-a732-9cfbfac5bcb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Bullet">
+      <UniqueIdentifier>{7d5f94a3-82e1-4e45-ada1-4c54f71aaf30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\HUD">
+      <UniqueIdentifier>{0a62fa56-359f-42c4-b6ea-640af4e2b663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\HUD">
+      <UniqueIdentifier>{ec5144d0-a889-44e7-8528-554c40c7e690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Character\Player">
+      <UniqueIdentifier>{4fc29b18-d39b-4fc4-8deb-9e52862b6a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Character\Ennemies">
+      <UniqueIdentifier>{ebfaed85-e8c0-4d0f-bb3f-559c8c74c6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Character\Player">
+      <UniqueIdentifier>{320fcd33-ffbb-40cb-815d-8d16693f6948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Character\Ennemies">
+      <UniqueIdentifier>{95ab01cd-3d47-4b74-b7af-fd902d7fd245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Entities\Map">
+      <UniqueIdentifier>{6220866a-4aad-47a5-a30d-85202e4ae90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Entities\Map">
+      <UniqueIdentifier>{019de70b-558d-4d10-ae7a-2581c1cdca84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Entities\Network">
+      <UniqueIdentifier>{9c7da75e-e866-4f4f-8b82-7ac24173e2b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Entities\Network">
+      <UniqueIdentifier>{3a8f8401-50fa-4aaa-84bc-68d461175284}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2DD517AD-90EF-4A66-B3B5-9E2F010B89B2}</ProjectGuid>
+    <RootNamespace>ToysRun</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>Projet vide</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SFML\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-network-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SFML\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio.lib;sfml-window.lib;sfml-system.lib;sfml-graphics.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Game\Bullet\Bullet.cpp" />
+    <ClCompile Include="sources\Game\Character\Ennemy.cpp" />
+    <ClCompile Include="sources\Game\Character\Kamikaz.cpp" />
+    <ClCompile Include="sources\Game\Character\Player.cpp" />
+    <ClCompile Include="sources\Game\Character\Sniper.cpp" />
+    <ClCompile Include="sources\Game\Character\Soldat.cpp" />
+    <ClCompile Include="sources\Game\Character\SoldatLourd.cpp" />
+    <ClCompile Include="sources\Game\Character\Tank\Tank.cpp" />
+    <ClCompile Include="sources\Game\Character\Tank\Turret.cpp" />
+    <ClCompile Include="sources\Game\Collectibles\Collectibles.cpp" />
+    <ClCompile Include="sources\Game\Entities\Base.cpp" />
+    <ClCompile Include="sources\Game\Entities\BulletEnnemy.cpp" />
+    <ClCompile Include="sources\Game\Entities\Button.cpp" />
+    <ClCompile Include="sources\Game\Entities\CreateGameForm.cpp" />
+    <ClCompile Include="sources\Game\Entities\DrawableObject.cpp" />
+    <ClCompile Include="sources\Game\Entities\HostedGame.cpp" />
+    <ClCompile Include="sources\Game\Entities\JoinGameForm.cpp" />
+    <ClCompile Include="sources\Game\Entities\Map.cpp" />
+    <ClCompile Include="sources\Game\Entities\Map_Plan.cpp" />
+    <ClCompile Include="sources\Game\Hud\elementHud.cpp" />
+    <ClCompile Include="sources\Game\Hud\HUD.cpp" />
+    <ClCompile Include="sources\main.cpp" />
+    <ClCompile Include="sources\Managers\ConnectManager.cpp" />
+    <ClCompile Include="sources\Managers\GameManager.cpp" />
+    <ClCompile Include="sources\Managers\PollEventManager.cpp" />
+    <ClCompile Include="sources\Managers\ViewManager.cpp" />
+    <ClCompile Include="sources\Scenes\Game.cpp" />
+    <ClCompile Include="sources\Scenes\Intro.cpp" />
+    <ClCompile Include="sources\Scenes\Lobby.cpp" />
+    <ClCompile Include="sources\Scenes\Login.cpp" />
+    <ClCompile Include="sources\Scenes\Menu.cpp" />
+    <ClCompile Include="sources\Scenes\Scene.cpp" />
+    <ClCompile Include="sources\Tools\ToolsSFML.cpp" />
+    <ClCompile Include="sources\Tools\UtilsCpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\Game\Bullet\Bullet.h" />
+    <ClInclude Include="sources\Game\Character\Ennemy.h" />
+    <ClInclude Include="sources\Game\Character\Kamikaz.h" />
+    <ClInclude Include="sources\Game\Character\Player.h" />
+    <ClInclude Include="sources\Game\Character\Sniper.h" />
+    <ClInclude Include="sources\Game\Character\Soldat.h" />
+    <ClInclude Include="sources\Game\Character\SoldatLourd.h" />
+    <ClInclude Include="sources\Game\Character\Tank\Tank.h" />
+    <ClInclude Include="sources\Game\Character\Tank\Turret.h" />
+    <ClInclude Include="sources\Game\Collectibles\Collectibles.h" />
+    <ClInclude Include="sources\Game\Entities\Base.h" />
+    <ClInclude Include="sources\Game\Entities\BulletEnnemy.h" />
+    <ClInclude Include="sources\Game\Entities\Button.h" />
+    <ClInclude Include="sources\Game\Entities\CreateGameForm.h" />
+    <ClInclude Include="sources\Game\Entities\DrawableObject.h" />
+    <ClInclude Include="sources\Game\Entities\HostedGame.h" />
+    <ClInclude Include="sources\Game\Entities\JoinGameForm.h" />
+    <ClInclude Include="sources\Game\Entities\Map.h" />
+    <ClInclude Include="sources\Game\Entities\Map_Plan.h" />
+    <ClInclude Include="sources\Game\Hud\elementHud.h" />
+    <ClInclude Include="sources\Game\Hud\HUD.h" />
+    <ClInclude Include="sources\Managers\ConnectManager.h" />
+    <ClInclude Include="sources\Managers\GameManager.h" />
+    <ClInclude Include="sources\Managers\PollEventManager.h" />
+    <ClInclude Include="sources\Managers\ViewManager.h" />
+    <ClInclude Include="sources\Scenes\Game.h" />
+    <ClInclude Include="sources\Scenes\Intro.h" />
+    <ClInclude Include="sources\Scenes\Lobby.h" />
+    <ClInclude Include="sources\Scenes\Login.h" />
+    <ClInclude Include="sources\Scenes\Menu.h" />
+    <ClInclude Include="sources\Scenes\Scene.h" />
+    <ClInclude Include="sources\Templates\Singleton.h" />
+    <ClInclude Include="sources\Tools\Defines.h" />
+    <ClInclude Include="sources\Tools\Enums.h" />
+    <ClInclude Include="sources\Tools\ToolsSFML.h" />
+    <ClInclude Include="sources\Tools\UtilsCpp.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

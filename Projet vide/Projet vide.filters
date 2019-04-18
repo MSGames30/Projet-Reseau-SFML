@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game">
+      <UniqueIdentifier>{0ed60af9-753e-4e28-bc5d-b243b744a3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Entities">
+      <UniqueIdentifier>{1cdef993-0810-48e5-b3cf-800b57c07fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Managers">
+      <UniqueIdentifier>{dc267d26-879b-485f-b5e2-9eae450099e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Scenes">
+      <UniqueIdentifier>{6d31dbe4-4a70-4fb4-8afc-aa4e4b96f9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Templates">
+      <UniqueIdentifier>{440c7894-4643-42b9-91ce-3d48ed807234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Tools">
+      <UniqueIdentifier>{921c0f0c-4ce9-4f84-b54a-2270e6c69f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game">
+      <UniqueIdentifier>{dd94df15-13da-44cf-90ab-0384f84e1e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Managers">
+      <UniqueIdentifier>{159e189e-e9ee-4dcb-bead-bc16aefca007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Scenes">
+      <UniqueIdentifier>{2e6cefdd-0693-4d2e-95e2-c1135c60f723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools">
+      <UniqueIdentifier>{4698ff89-540c-4b32-a574-0cdacaa063d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Game\Character">
+      <UniqueIdentifier>{800e29cd-3d03-4a83-ad6e-1512e83f52b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Entities">
+      <UniqueIdentifier>{e0a2f9f1-d70c-4d28-9d9b-f79d78aa3866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Character">
+      <UniqueIdentifier>{e9949594-6800-4883-a23e-ea73ee25698f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\Game\Entities\DrawableObject.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\GameManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\Defines.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\Enums.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Templates\Singleton.h">
+      <Filter>Fichiers d%27en-tête\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Game.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Intro.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Menu.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Scenes\Scene.h">
+      <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Tools\UtilsCpp.h">
+      <Filter>Fichiers d%27en-tête\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Character\Player.h">
+      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\Managers\GameManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Game.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Intro.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Menu.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Scenes\Scene.cpp">
+      <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Tools\UtilsCpp.cpp">
+      <Filter>Fichiers sources\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Character\Player.cpp">
+      <Filter>Fichiers sources\Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\DrawableObject.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

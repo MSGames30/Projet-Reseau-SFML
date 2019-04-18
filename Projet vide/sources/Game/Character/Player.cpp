@@ -1,12 +1,16 @@
 #include "Player.h"
-//#include "../../Managers/ConnectManager.h"
-
+#include "../../Managers/ConnectManager.h"
+#define DISCONNECT_DELAY 3.0f
 
 Player::Player()
 {
 	isinGame = false;
 	isHost = false;
-	//ConnectManager::Instance()->sendMessage("hello", sf::IpAddress::Broadcast);
+	//ConnectManager::Instance()->sendMessage("-hello", sf::IpAddress::Broadcast);
+	asBeenPinged = false;
+	asReplyied = false;
+	replyDelay.restart();
+	isDisconnected = false;
 }
 
 Player::Player(bool _isInGame, bool _isHost, std::string _playerName, sf::IpAddress _playerIP, unsigned short _playerPort)
@@ -16,7 +20,10 @@ Player::Player(bool _isInGame, bool _isHost, std::string _playerName, sf::IpAddr
 	playerName = _playerName;
 	playerIP = _playerIP;
 	playerPort = _playerPort;
-	
+	asBeenPinged = false;
+	asReplyied = false;
+	replyDelay.restart();
+	isDisconnected = false;
 }
 
 
@@ -32,10 +39,27 @@ void Player::setPlayerIdentity(std::string _playerIP, unsigned short _playerPort
 
 void Player::update()
 {
-	if (turret != nullptr)
-		turret->update(slot);
-
-	//std::cout << "update player" << std::endl;
+	if (asBeenPinged)
+	{
+		if (replyDelay.getElapsedTime().asSeconds() > DISCONNECT_DELAY)
+		{
+			std::cout << "Timer depasse" << std::endl;
+			if (asReplyied)
+			{
+				std::cout << "A repondu" << std::endl;
+				asBeenPinged = false;
+				isDisconnected = false;
+				asReplyied = false;
+			}
+			else
+			{
+				std::cout << "N'a pas repondu" << std::endl;
+				asBeenPinged = false;
+				isDisconnected = true;
+				asReplyied = false;
+			}
+		}
+	}
 }
 
 void Player::draw(sf::RenderTarget & target, sf::RenderStates states) const
@@ -52,23 +76,57 @@ void Player::setPlayerName(std::string _playerName)
 	playerName = _playerName;
 }
 
-void Player::initTurret(enums::TurretType ptype, enums::TurretSlot pslot)
+sf::IpAddress Player::getPlayerIP()
 {
-	slot = pslot;
-	type = ptype;
+	return playerIP;
 }
 
-enums::TurretType Player::getType()
+bool Player::getIsHost()
 {
-	return type;
+	return isHost;
 }
 
-enums::TurretSlot Player::getSlot()
+bool Player::getIsInGame()
 {
-	return slot;
+	if (isinGame == true)
+	{
+		std::cout << "IN" << std::endl;
+	}
+	return isinGame;
 }
 
-void Player::setTurret(Turret * pturret)
+std::string Player::getPlayerName()
 {
-	turret = pturret;
+	return playerName;
+}
+
+void Player::setAsBeenPinged(bool _state)
+{
+	asBeenPinged = _state;
+	if (_state)
+	{
+		replyDelay.restart();
+	}
+}
+
+bool Player::getAsBeenPinged()
+{
+	return asBeenPinged;
+}
+
+bool Player::getIsDisconnected()
+{
+	return isDisconnected;
+}
+
+void Player::setAsReplyied(bool _state)
+{
+	asReplyied = _state;
+}
+
+void Player::setHostedGame(HostedGame & _hostedGame)
+{
+	isHost = true;
+	isinGame = true;
+	myHostedGame = &_hostedGame;
 }

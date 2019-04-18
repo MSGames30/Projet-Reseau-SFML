@@ -1,8 +1,8 @@
 #pragma once
 #include "../Entities/DrawableObject.h"
 #include <SFML\Network.hpp>
-#include "Tank/Turret.h"
-//#include "../../Tools/Enums.h"
+#include "../../Game/Entities/HostedGame.h"
+
 class Player :
 	public DrawableObject
 {
@@ -15,14 +15,17 @@ public:
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 	virtual sf::FloatRect getGlobalBounds() const;
 	void setPlayerName(std::string _playerName);
+	sf::IpAddress getPlayerIP();
+	bool getIsHost();
+	bool getIsInGame();
+	std::string getPlayerName();
 
-	void initTurret(enums::TurretType ptype, enums::TurretSlot pslot);
+	void setAsBeenPinged(bool _state);
+	bool getAsBeenPinged();
+	bool getIsDisconnected();
 
-	enums::TurretType getType();
-	enums::TurretSlot getSlot();
-
-	void setTurret(Turret *pturret);
-
+	void setAsReplyied(bool _state);
+	void setHostedGame(HostedGame& _hostedGame);
 private:
 	std::string playerName;
 	sf::IpAddress playerIP;
@@ -31,9 +34,11 @@ private:
 	bool isinGame;
 	bool isHost;
 
+	bool asBeenPinged;
+	bool asReplyied;
+	bool isDisconnected;
+	sf::Clock replyDelay;
 
-	enums::TurretType type;
-	enums::TurretSlot slot;
-	Turret *turret;
+	HostedGame* myHostedGame;
 };
 

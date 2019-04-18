@@ -90,7 +90,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-audio-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-network-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-network-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -122,71 +122,38 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>..\SFML\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-audio.lib;sfml-window.lib;sfml-system.lib;sfml-graphics.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-network.lib;sfml-audio.lib;sfml-window.lib;sfml-system.lib;sfml-graphics.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="sources\Game\Bullet\Bullet.cpp" />
-    <ClCompile Include="sources\Game\Character\Ennemy.cpp" />
-    <ClCompile Include="sources\Game\Character\Kamikaz.cpp" />
     <ClCompile Include="sources\Game\Character\Player.cpp" />
-    <ClCompile Include="sources\Game\Character\Sniper.cpp" />
-    <ClCompile Include="sources\Game\Character\Soldat.cpp" />
-    <ClCompile Include="sources\Game\Character\SoldatLourd.cpp" />
-    <ClCompile Include="sources\Game\Character\Tank\Tank.cpp" />
-    <ClCompile Include="sources\Game\Character\Tank\Turret.cpp" />
-    <ClCompile Include="sources\Game\Collectibles\Collectibles.cpp" />
-    <ClCompile Include="sources\Game\Entities\Base.cpp" />
-    <ClCompile Include="sources\Game\Entities\BulletEnnemy.cpp" />
     <ClCompile Include="sources\Game\Entities\Button.cpp" />
     <ClCompile Include="sources\Game\Entities\CreateGameForm.cpp" />
     <ClCompile Include="sources\Game\Entities\DrawableObject.cpp" />
     <ClCompile Include="sources\Game\Entities\HostedGame.cpp" />
     <ClCompile Include="sources\Game\Entities\JoinGameForm.cpp" />
-    <ClCompile Include="sources\Game\Entities\Map.cpp" />
-    <ClCompile Include="sources\Game\Entities\Map_Plan.cpp" />
-    <ClCompile Include="sources\Game\Hud\elementHud.cpp" />
-    <ClCompile Include="sources\Game\Hud\HUD.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\Managers\ConnectManager.cpp" />
     <ClCompile Include="sources\Managers\GameManager.cpp" />
     <ClCompile Include="sources\Managers\PollEventManager.cpp" />
-    <ClCompile Include="sources\Managers\ViewManager.cpp" />
     <ClCompile Include="sources\Scenes\Game.cpp" />
     <ClCompile Include="sources\Scenes\Intro.cpp" />
     <ClCompile Include="sources\Scenes\Lobby.cpp" />
     <ClCompile Include="sources\Scenes\Login.cpp" />
     <ClCompile Include="sources\Scenes\Menu.cpp" />
     <ClCompile Include="sources\Scenes\Scene.cpp" />
-    <ClCompile Include="sources\Tools\ToolsSFML.cpp" />
     <ClCompile Include="sources\Tools\UtilsCpp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sources\Game\Bullet\Bullet.h" />
-    <ClInclude Include="sources\Game\Character\Ennemy.h" />
-    <ClInclude Include="sources\Game\Character\Kamikaz.h" />
     <ClInclude Include="sources\Game\Character\Player.h" />
-    <ClInclude Include="sources\Game\Character\Sniper.h" />
-    <ClInclude Include="sources\Game\Character\Soldat.h" />
-    <ClInclude Include="sources\Game\Character\SoldatLourd.h" />
-    <ClInclude Include="sources\Game\Character\Tank\Tank.h" />
-    <ClInclude Include="sources\Game\Character\Tank\Turret.h" />
-    <ClInclude Include="sources\Game\Collectibles\Collectibles.h" />
-    <ClInclude Include="sources\Game\Entities\Base.h" />
-    <ClInclude Include="sources\Game\Entities\BulletEnnemy.h" />
     <ClInclude Include="sources\Game\Entities\Button.h" />
     <ClInclude Include="sources\Game\Entities\CreateGameForm.h" />
     <ClInclude Include="sources\Game\Entities\DrawableObject.h" />
     <ClInclude Include="sources\Game\Entities\HostedGame.h" />
     <ClInclude Include="sources\Game\Entities\JoinGameForm.h" />
-    <ClInclude Include="sources\Game\Entities\Map.h" />
-    <ClInclude Include="sources\Game\Entities\Map_Plan.h" />
-    <ClInclude Include="sources\Game\Hud\elementHud.h" />
-    <ClInclude Include="sources\Game\Hud\HUD.h" />
     <ClInclude Include="sources\Managers\ConnectManager.h" />
     <ClInclude Include="sources\Managers\GameManager.h" />
     <ClInclude Include="sources\Managers\PollEventManager.h" />
-    <ClInclude Include="sources\Managers\ViewManager.h" />
     <ClInclude Include="sources\Scenes\Game.h" />
     <ClInclude Include="sources\Scenes\Intro.h" />
     <ClInclude Include="sources\Scenes\Lobby.h" />
@@ -196,7 +163,6 @@
     <ClInclude Include="sources\Templates\Singleton.h" />
     <ClInclude Include="sources\Tools\Defines.h" />
     <ClInclude Include="sources\Tools\Enums.h" />
-    <ClInclude Include="sources\Tools\ToolsSFML.h" />
     <ClInclude Include="sources\Tools\UtilsCpp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

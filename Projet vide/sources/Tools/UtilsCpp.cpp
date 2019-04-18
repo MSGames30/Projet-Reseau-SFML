@@ -213,18 +213,3 @@ Vector2f Truncate(Vector2f _vector, float _max)
 	return _vector;
 }
 
-sf::Sprite CreateSpriteFromPath(std::string _PathToTexture)
-{
-	// create a pointer to a texture
-	sf::Texture *texture = new sf::Texture;
-
-	//load the texture from the file & make an error management
-	if (!texture->loadFromFile(_PathToTexture))
-	{
-		std::cout << "Fail To Dowload The texture : " << _PathToTexture << std::endl;
-	}
-	sf::Sprite sprite;
-	sprite.setTexture(*texture); // apply the texture to a sprite
-
-	return sprite; // return the sprite
-}

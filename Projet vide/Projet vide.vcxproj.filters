@@ -28,73 +28,7 @@
     <ClCompile Include="sources\Scenes\Scene.cpp">
       <Filter>Fichiers sources\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="sources\Game\Character\Tank\Tank.cpp">
-      <Filter>Fichiers sources\Game\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\Tank\Turret.cpp">
-      <Filter>Fichiers sources\Game\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Bullet\Bullet.cpp">
-      <Filter>Fichiers sources\Game\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Hud\HUD.cpp">
-      <Filter>Fichiers sources\Game\HUD</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Hud\elementHud.cpp">
-      <Filter>Fichiers sources\Game\HUD</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\Ennemy.cpp">
-      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\Kamikaz.cpp">
-      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\Sniper.cpp">
-      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\Soldat.cpp">
-      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Character\SoldatLourd.cpp">
-      <Filter>Fichiers sources\Game\Character\Ennemies</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\Base.cpp">
-      <Filter>Fichiers sources\Game\Entities\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\BulletEnnemy.cpp">
-      <Filter>Fichiers sources\Game\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\Map.cpp">
-      <Filter>Fichiers sources\Game\Entities\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Collectibles\Collectibles.cpp">
-      <Filter>Fichiers sources\Game\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\Map_Plan.cpp">
-      <Filter>Fichiers sources\Game\Entities\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Tools\ToolsSFML.cpp">
-      <Filter>Fichiers sources\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Managers\ViewManager.cpp">
-      <Filter>Fichiers sources\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\JoinGameForm.cpp">
-      <Filter>Fichiers sources\Game\Entities\Network</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\HostedGame.cpp">
-      <Filter>Fichiers sources\Game\Entities\Network</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\CreateGameForm.cpp">
-      <Filter>Fichiers sources\Game\Entities\Network</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Game\Entities\Button.cpp">
-      <Filter>Fichiers sources\Game\Entities\Network</Filter>
-    </ClCompile>
     <ClCompile Include="sources\Managers\ConnectManager.cpp">
-      <Filter>Fichiers sources\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="sources\Managers\PollEventManager.cpp">
       <Filter>Fichiers sources\Managers</Filter>
     </ClCompile>
     <ClCompile Include="sources\Scenes\Lobby.cpp">
@@ -102,6 +36,21 @@
     </ClCompile>
     <ClCompile Include="sources\Scenes\Login.cpp">
       <Filter>Fichiers sources\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\Button.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Managers\PollEventManager.cpp">
+      <Filter>Fichiers sources\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\CreateGameForm.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\JoinGameForm.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Game\Entities\HostedGame.cpp">
+      <Filter>Fichiers sources\Game\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,73 +87,7 @@
     <ClInclude Include="sources\Managers\GameManager.h">
       <Filter>Fichiers d%27en-tête\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="sources\Game\Character\Tank\Tank.h">
-      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\Tank\Turret.h">
-      <Filter>Fichiers d%27en-tête\Game\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Bullet\Bullet.h">
-      <Filter>Fichiers d%27en-tête\Game\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Hud\HUD.h">
-      <Filter>Fichiers d%27en-tête\Game\HUD</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Hud\elementHud.h">
-      <Filter>Fichiers d%27en-tête\Game\HUD</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\Ennemy.h">
-      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\Kamikaz.h">
-      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\Sniper.h">
-      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\Soldat.h">
-      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Character\SoldatLourd.h">
-      <Filter>Fichiers d%27en-tête\Game\Character\Ennemies</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\Base.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\BulletEnnemy.h">
-      <Filter>Fichiers d%27en-tête\Game\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\Map.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Collectibles\Collectibles.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\Map_Plan.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Tools\ToolsSFML.h">
-      <Filter>Fichiers d%27en-tête\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Managers\ViewManager.h">
-      <Filter>Fichiers d%27en-tête\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\Button.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\CreateGameForm.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\HostedGame.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Game\Entities\JoinGameForm.h">
-      <Filter>Fichiers d%27en-tête\Game\Entities\Network</Filter>
-    </ClInclude>
     <ClInclude Include="sources\Managers\ConnectManager.h">
-      <Filter>Fichiers d%27en-tête\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="sources\Managers\PollEventManager.h">
       <Filter>Fichiers d%27en-tête\Managers</Filter>
     </ClInclude>
     <ClInclude Include="sources\Scenes\Lobby.h">
@@ -212,6 +95,21 @@
     </ClInclude>
     <ClInclude Include="sources\Scenes\Login.h">
       <Filter>Fichiers d%27en-tête\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\Button.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Managers\PollEventManager.h">
+      <Filter>Fichiers d%27en-tête\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\CreateGameForm.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\JoinGameForm.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\Game\Entities\HostedGame.h">
+      <Filter>Fichiers d%27en-tête\Game\Entities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -259,42 +157,6 @@
     </Filter>
     <Filter Include="Fichiers sources\Scenes">
       <UniqueIdentifier>{e108ad1d-f3f1-481e-bb23-932747ee5aea}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\Bullet">
-      <UniqueIdentifier>{8af033bd-955e-4aa1-a732-9cfbfac5bcb7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\Bullet">
-      <UniqueIdentifier>{7d5f94a3-82e1-4e45-ada1-4c54f71aaf30}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\HUD">
-      <UniqueIdentifier>{0a62fa56-359f-42c4-b6ea-640af4e2b663}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\HUD">
-      <UniqueIdentifier>{ec5144d0-a889-44e7-8528-554c40c7e690}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\Character\Player">
-      <UniqueIdentifier>{4fc29b18-d39b-4fc4-8deb-9e52862b6a7e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\Character\Ennemies">
-      <UniqueIdentifier>{ebfaed85-e8c0-4d0f-bb3f-559c8c74c6a0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\Character\Player">
-      <UniqueIdentifier>{320fcd33-ffbb-40cb-815d-8d16693f6948}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\Character\Ennemies">
-      <UniqueIdentifier>{95ab01cd-3d47-4b74-b7af-fd902d7fd245}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\Entities\Map">
-      <UniqueIdentifier>{6220866a-4aad-47a5-a30d-85202e4ae90a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\Entities\Map">
-      <UniqueIdentifier>{019de70b-558d-4d10-ae7a-2581c1cdca84}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Game\Entities\Network">
-      <UniqueIdentifier>{9c7da75e-e866-4f4f-8b82-7ac24173e2b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Game\Entities\Network">
-      <UniqueIdentifier>{3a8f8401-50fa-4aaa-84bc-68d461175284}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

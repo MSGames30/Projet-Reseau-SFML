@@ -31,6 +31,4 @@ Vector2f Normalize(Vector2f _vector);
 float Magnitude(Vector2f _vector);
 Vector2f Truncate(Vector2f _vector, float _max);
 
-sf::Sprite CreateSpriteFromPath(std::string _PathToTexture);
-
 #pragma once

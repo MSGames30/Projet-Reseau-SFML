@@ -50,24 +50,6 @@ namespace enums
 		SHIELD,
 		LIFE
 	};
-
-	enum class ennemies_Type
-	{
-		SOLDAT = 0,
-		SOLDAT_LOURD,
-		SNIPER,
-		KAMIKAZ
-	};
-
-	enum class STATE_ENNEMY
-	{
-		WALK = 0,
-		RUN,
-		SURPRISE,
-		ATTAQUE,
-		COLLIDER,
-		DEAD
-	};
 }
 
 
